@@ -1,9 +1,14 @@
 db:
-    image: mysql:5.6
+    image: mysql:latest
+    expose:
+        - "3306"
     ports:
-        - "3306:3306"
+        - "3307:3306"
     environment:
-        MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: admin123
+      MYSQL_ROOT_PASSWORD: admin123
 
 hhvm:
     build: hhvm/.
