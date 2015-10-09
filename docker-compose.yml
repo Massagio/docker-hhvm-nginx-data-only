@@ -1,0 +1,35 @@
+mysql:
+  image: mysql:latest
+  expose:
+    - "3306"
+  ports:
+    - "3307:3306"
+  environment:
+    MYSQL_DATABASE: database
+    MYSQL_USER: root
+    MYSQL_PASSWORD: admin123
+    MYSQL_ROOT_PASSWORD: admin123
+
+test1:
+  build: test1/.
+  volumes:
+    - ./test1/application:/var/www
+  links:
+  - mysql:mysql
+
+nginx:
+  build: nginx/.
+  volumes:
+    - ./nginx/cache:/var/cache/nginx
+    - ./nginx/logs:/var/log/nginx
+  volumes_from:
+    - test1
+  expose:
+    - "80"
+  ports:
+    - "80:80"
+
+hhvm:
+  build: hhvm/.
+  volumes_from:
+    - test1
