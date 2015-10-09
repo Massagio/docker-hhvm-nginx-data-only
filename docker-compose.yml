@@ -14,6 +14,7 @@ hhvm:
         - "9000"
     volumes_from:
         - data
+        - data2
 nginx:
     build: nginx/.
     volumes:
@@ -21,8 +22,10 @@ nginx:
         - ./nginx/logs:/var/log/nginx
     ports:
         - "8000:80"
+        - "7000:8080"
     volumes_from:
         - data
+        - data2
     links:
         - hhvm
 
@@ -30,5 +33,12 @@ data:
   build: data/.
   volumes:
     - ./data/src:/var/www/src
+  links:
+      - db
+
+data2:
+  build: data/.
+  volumes:
+    - ./data2/src:/var/www/src1
   links:
       - db
