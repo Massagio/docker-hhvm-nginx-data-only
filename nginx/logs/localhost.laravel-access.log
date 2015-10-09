@@ -35,3 +35,6 @@
 192.168.99.1 - - [09/Oct/2015:13:27:37 +0000] "GET /index.hh HTTP/1.1" 500 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
 192.168.99.1 - - [09/Oct/2015:13:32:51 +0000] "GET /index.hh HTTP/1.1" 200 36 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
 192.168.99.1 - - [09/Oct/2015:13:33:04 +0000] "GET /index.hh HTTP/1.1" 200 36 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
+192.168.99.1 - - [09/Oct/2015:13:36:52 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
+192.168.99.1 - - [09/Oct/2015:13:37:02 +0000] "GET /index.hh HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
+192.168.99.1 - - [09/Oct/2015:13:37:02 +0000] "GET /index.hh HTTP/1.1" 200 36 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2531.0 Safari/537.36"
