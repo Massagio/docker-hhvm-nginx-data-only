@@ -1,7 +1,7 @@
 # DOCKER-VERSION 1.8.1
 FROM    debian:jessie
 
-MAINTAINER Daniel Fiebig, daniel@massagio.de
+MAINTAINER Daniel Fiebig, daniel@wellnow.de
 
 ENV TZ=Europe/Berlin
 

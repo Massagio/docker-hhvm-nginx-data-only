@@ -1,6 +1,6 @@
 FROM brunoric/hhvm:deb
 
-MAINTAINER Daniel Fiebig, daniel@massagio.de
+MAINTAINER Daniel Fiebig, daniel@wellnow.de
 
 # RUN hh_client /var/www/src/public
 
